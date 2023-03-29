@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace User._Scripts.Util
+namespace Main._Scripts.Util
 {
 	/// <summary>
 	/// Simple timer with callback

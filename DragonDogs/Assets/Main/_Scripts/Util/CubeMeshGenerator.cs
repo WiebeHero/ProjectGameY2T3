@@ -2,7 +2,7 @@
 
 // ReSharper disable IdentifierTypo
 
-namespace User._Scripts.Util
+namespace Main._Scripts.Util
 {
 	
 	/// <summary>
