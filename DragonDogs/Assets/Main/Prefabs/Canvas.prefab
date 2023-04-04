@@ -421,7 +421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 612568d480f7cc540bab739450e98797, type: 3}
+  m_Texture: {fileID: 2800000, guid: c17c22df043c4c14ca94c53c6e497f74, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4021,7 +4021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf5d33684efa98c40902b0d7b154619a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd74cccb5368d80448885437d71d1570, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
