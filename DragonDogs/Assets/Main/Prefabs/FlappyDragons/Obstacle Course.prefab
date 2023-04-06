@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8178249405488887333}
   - component: {fileID: 4576698613586545657}
+  - component: {fileID: 4624925857266784102}
   m_Layer: 0
   m_Name: Obstacle Course
   m_TagString: Untagged
@@ -47,3 +48,20 @@ MonoBehaviour:
   _topLimitObject: {fileID: 0}
   _bottomLimitObject: {fileID: 0}
   _openingHeight: 10
+  _obstacleMaterial: {fileID: 0}
+  _obstacleGirth: 1
+  _obstacleDepth: 1
+  _scrollingSpeed: 1
+  _obstacleSpacingSeconds: 10
+--- !u!114 &4624925857266784102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7196924977062765975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a669d1b4083428ab5c8cc175f69bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
