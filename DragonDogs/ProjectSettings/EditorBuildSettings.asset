@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main/Scenes/FlappyDragon.unity
     guid: dbcb40dfac4870e468c5b831ec5f432d
+  - enabled: 0
+    path: Assets/Dragon Test Scene/yeha.unity
+    guid: a84778aa9d92df84999d8c90b77f35c4
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8772bc014e10c7e43b4cc6dbcb719b2e,
       type: 2}
