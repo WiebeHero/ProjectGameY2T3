@@ -1,9 +1,8 @@
-﻿using Main._Scripts;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace User._Scripts.FlappyDragon.States
+namespace Main._Scripts.FlappyDragon.States
 {
 	public class FinishState : CustomState
 	{

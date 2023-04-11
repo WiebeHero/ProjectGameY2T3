@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace User._Scripts.FlappyDragon
+namespace Main._Scripts.FlappyDragon
 {
 	public class Obstacle : MonoBehaviour
 	{

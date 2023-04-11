@@ -1,8 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using User._Scripts.FlappyDragon;
-using User._Scripts.FlappyDragon.States;
 
 namespace Main._Scripts.FlappyDragon.States
 {
@@ -20,10 +18,10 @@ namespace Main._Scripts.FlappyDragon.States
 			_dragon.LockInput(false);
 			_dragon.DisableCollision(false);
 			
-			_scoreText.text = User._Scripts.FlappyDragon.FlappyDragon.instance.score.ToString();
+			_scoreText.text = FlappyDragon.instance.score.ToString();
 			_scoreText.gameObject.SetActive(true);
 			
-			User._Scripts.FlappyDragon.FlappyDragon.instance.onScoreChanged += OnScoreChanged;
+			FlappyDragon.instance.onScoreChanged += OnScoreChanged;
 			
 			_testEndButton.gameObject.SetActive(true);
 			_testEndButton.onClick.AddListener(OnTestEndButtonClicked);
@@ -60,7 +58,7 @@ namespace Main._Scripts.FlappyDragon.States
 			_testEndButton.gameObject.SetActive(false);
 			_testEndButton.onClick.RemoveListener(OnTestEndButtonClicked);
 			
-			User._Scripts.FlappyDragon.FlappyDragon.instance.onScoreChanged -= OnScoreChanged;
+			FlappyDragon.instance.onScoreChanged -= OnScoreChanged;
 		}
 	}
 }

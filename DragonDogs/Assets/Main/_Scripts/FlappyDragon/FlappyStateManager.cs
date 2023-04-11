@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
-using Main._Scripts;
 using UnityEngine;
 
-namespace User._Scripts.FlappyDragon
+namespace Main._Scripts.FlappyDragon
 {
 	public class FlappyStateManager : MonoBehaviour
 	{

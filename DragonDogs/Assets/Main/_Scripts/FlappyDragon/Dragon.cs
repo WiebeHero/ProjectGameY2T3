@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector3 = UnityEngine.Vector3;
 
-namespace User._Scripts.FlappyDragon
+namespace Main._Scripts.FlappyDragon
 {
     [RequireComponent(typeof(Rigidbody))]
     public class Dragon : MonoBehaviour

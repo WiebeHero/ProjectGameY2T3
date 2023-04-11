@@ -1,9 +1,7 @@
-﻿using Main._Scripts;
-using Main._Scripts.FlappyDragon.States;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace User._Scripts.FlappyDragon.States
+namespace Main._Scripts.FlappyDragon.States
 {
 	public class StartState : CustomState
 	{

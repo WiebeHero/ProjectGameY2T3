@@ -3,7 +3,7 @@ using Main._Scripts.Util;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace User._Scripts.FlappyDragon
+namespace Main._Scripts.FlappyDragon
 {
 	[RequireComponent(typeof(PausableTimer))]
 	public class ObstacleCourse : MonoBehaviour
