@@ -3,7 +3,12 @@ guid: 54de71a11931e3c4eb2a64548cccbfe9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: b11711b229d82e842ba94964c83a6445, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -66,7 +71,7 @@ ModelImporter:
       takeName: deform|Export Handler
       internalID: 7863662769078476476
       firstFrame: 101
-      lastFrame: 160
+      lastFrame: 161
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -94,8 +99,8 @@ ModelImporter:
       name: sitting->lying
       takeName: deform|Export Handler
       internalID: 7527602701642392366
-      firstFrame: 161
-      lastFrame: 179
+      firstFrame: 162
+      lastFrame: 182
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -123,8 +128,8 @@ ModelImporter:
       name: lying->sitting
       takeName: deform|Export Handler
       internalID: -4941002807741565839
-      firstFrame: 180
-      lastFrame: 199
+      firstFrame: 183
+      lastFrame: 201
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -152,8 +157,8 @@ ModelImporter:
       name: lying idle
       takeName: deform|Export Handler
       internalID: -7852306605771278765
-      firstFrame: 200
-      lastFrame: 258
+      firstFrame: 202
+      lastFrame: 261
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -181,8 +186,8 @@ ModelImporter:
       name: maxwell
       takeName: deform|Export Handler
       internalID: 6140200823415876416
-      firstFrame: 259
-      lastFrame: 296
+      firstFrame: 262
+      lastFrame: 300
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -210,8 +215,8 @@ ModelImporter:
       name: roll over
       takeName: deform|Export Handler
       internalID: 60267597136896655
-      firstFrame: 297
-      lastFrame: 365
+      firstFrame: 301
+      lastFrame: 370
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -239,8 +244,8 @@ ModelImporter:
       name: run
       takeName: deform|Export Handler
       internalID: 5820291086784577026
-      firstFrame: 366
-      lastFrame: 383
+      firstFrame: 371
+      lastFrame: 389
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -268,8 +273,8 @@ ModelImporter:
       name: stand->sit
       takeName: deform|Export Handler
       internalID: 8492505382797672506
-      firstFrame: 384
-      lastFrame: 421
+      firstFrame: 390
+      lastFrame: 430
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -297,8 +302,8 @@ ModelImporter:
       name: sit->stand
       takeName: deform|Export Handler
       internalID: -7925727680117610475
-      firstFrame: 422
-      lastFrame: 461
+      firstFrame: 431
+      lastFrame: 468
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -326,8 +331,8 @@ ModelImporter:
       name: sit idle
       takeName: deform|Export Handler
       internalID: 2896573028522899398
-      firstFrame: 462
-      lastFrame: 539
+      firstFrame: 469
+      lastFrame: 547
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -355,8 +360,8 @@ ModelImporter:
       name: walk
       takeName: deform|Export Handler
       internalID: 4908159098207517931
-      firstFrame: 540
-      lastFrame: 567
+      firstFrame: 548
+      lastFrame: 576
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -364,6 +369,64 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: flappy dragon
+      takeName: deform|Export Handler
+      internalID: -3148010734637229872
+      firstFrame: 577
+      lastFrame: 627
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: standing idle
+      takeName: deform|Export Handler
+      internalID: 7355211925243376300
+      firstFrame: 628
+      lastFrame: 688
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
