@@ -16,11 +16,5 @@ namespace Main._Scripts.DragonBlower.BlowStates
 		{
 			BlowStateManager.SetState(typeof(BlowMainState));
 		}
-
-		public override void Initiate()
-		{
-			DragonBlower.instance.ResetPosition();
-			base.Initiate();
-		}
 	}
 }

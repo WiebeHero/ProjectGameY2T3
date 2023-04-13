@@ -8,14 +8,14 @@ namespace Main._Scripts.DragonBlower.BlowStates
 
 		public virtual void Initiate()
 		{
-			_container.SetActive(true);
+			if (_container != null) _container.SetActive(true);
 		}
 
 		public virtual void FixedStateUpdate() {}
 
 		public virtual void Stop()
 		{
-			_container.SetActive(false);
+			if (_container != null) _container.SetActive(false);
 		}
 	}
 }
