@@ -19,6 +19,14 @@ namespace Main._Scripts.Util
 			_duration = pDurationInSeconds;
 			_callback = pCallback;
 		}
+
+		public void Stop()
+		{
+			running = false;
+			paused = false;
+			_timePassed = 0;
+			_callback = null;
+		}
 		
 		private void Update()
 		{

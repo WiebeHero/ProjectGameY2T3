@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Main._Scripts.DragonBlower
 {
 	[RequireComponent(typeof(AudioSource))]
-	public class MicToMovement : MonoBehaviour
+	public class MicToSpeed : MonoBehaviour
 	{
 		[Header("Loudness calculation")] 
 		[SerializeField] private int _sampleWindow = 64;
@@ -14,11 +14,18 @@ namespace Main._Scripts.DragonBlower
 		[SerializeField] private float _threshold = 0.1f;
 		[SerializeField] private int _sampleFrameAmount = 3;
 
+
+		[Header("Speed limits")] 
+		[SerializeField] private float _maxSpeed = 0.5f;
+		[SerializeField] private float _minSpeed = -0.5f;
+		
 		private float[] _frameSamples;
 		private int _frameSampleCounter = 1;
 
 		private AudioClip _micClip;
 		private bool _recording;
+		
+		public float speed { get; private set; }
 
 		private void Awake()
 		{
@@ -46,7 +53,10 @@ namespace Main._Scripts.DragonBlower
 			{
 				float total = _frameSamples.Sum();
 				total /= _sampleFrameAmount;
-				transform.position += Vector3.Lerp(new Vector3(), new Vector3(0,1,0), total);
+				// transform.position += Vector3.Lerp(new Vector3(), new Vector3(0,1,0), total);
+				
+				speed = Mathf.Lerp(_minSpeed, _maxSpeed, total);
+				
 				_frameSampleCounter = 1;
 			}
 			
@@ -62,6 +72,7 @@ namespace Main._Scripts.DragonBlower
 		/// </summary>
 		public void StartRecording()
 		{
+			_recording = true;
 			_micClip = Microphone.Start(null, true, 20, AudioSettings.outputSampleRate);
 		}
 
@@ -70,7 +81,9 @@ namespace Main._Scripts.DragonBlower
 		/// </summary>
 		public void StopRecording()
 		{
+			_recording = false;
 			Microphone.End(null);
+			speed = 0;
 		}
 		
 		public float GetLoudnessFromMicrophoneClip()
