@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using User.Wiebe.Scripts;
 
 public class SpeechRecognizerPlugin_Editor : SpeechRecognizerPlugin
 {
@@ -13,7 +14,7 @@ public class SpeechRecognizerPlugin_Editor : SpeechRecognizerPlugin
 
     public override void StartListening()
     {
-        SpeechRecognizer speechRecognizer = GameObject.FindObjectOfType<SpeechRecognizer>();
+        ISpeechRecognizerPlugin speechRecognizer = GameObject.FindObjectOfType<DragonCommands>();
         if (this.isContinuous)
             speechRecognizer.OnResult("continuous listening test~continuous listening test~continuous listening test");
         else
