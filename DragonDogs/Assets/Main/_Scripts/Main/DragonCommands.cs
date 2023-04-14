@@ -24,7 +24,7 @@ namespace User.Wiebe.Scripts
         private bool _recordingInput;
         private int _timesRecorded;
         private List<string> _spokenWords;
-        private bool spoken;
+        private bool _spoken;
         private SpeechRecognizerPlugin speechRecognizer = null;
 
         private void Start()
@@ -51,6 +51,7 @@ namespace User.Wiebe.Scripts
             
             foreach (KeyValuePair<CommandDisplay, Type> pair in commands)
             {
+                Debug.Log("Jajajaja");
                 _dropdown.options.Add(new TMP_Dropdown.OptionData(pair.Key.Display));
             }
 
@@ -59,14 +60,23 @@ namespace User.Wiebe.Scripts
 
             if (_animator == null)
                 throw new Exception("Dragon: There is no animator component!");
-
+            
             Debug.Log("Starting voice listener!");
             speechRecognizer = SpeechRecognizerPlugin.GetPlatformPluginVersion(gameObject.name);
-            speechRecognizer.SetContinuousListening(true);
-            speechRecognizer.StartListening();
+            
+            
+            //The old listening configuration
+            //speechRecognizer.SetContinuousListening(true);
+            //speechRecognizer.StartListening();
             Debug.Log("Voice listener started!");
         }
-        
+
+        private void OnDisable()
+        {
+            speechRecognizer.StopListening();
+            speechRecognizer = null;
+        }
+
         public void OnResult(string recognizedResult)
         {
             
@@ -101,15 +111,40 @@ namespace User.Wiebe.Scripts
             }
         }
 
+        public void StartRecordingCommand()
+        {
+            speechRecognizer.StartListening(false);
+        }
+
+        public void StopRecordingCommand()
+        {
+            speechRecognizer.StopListening();
+        }
+        
+        public void RecordChosenInput()
+        {
+            _recordingInput = true;
+            _updateText.text = "Recording...";
+        }
+
+        public void CancelRecording()
+        {
+            _recordingInput = false;
+            _updateText.text = "Not Recording...";
+            _spokenWords.Clear();
+            _spoken = false;
+            _timesRecorded = 0;
+        }
+
         private void RecordInput(string result)
         {
             string[] splitted = result.Split(' ');
             _spokenWords.AddRange(splitted);
-            if (!spoken)
+            if (!_spoken)
             {
                 _updateText.text = "Recorded!";
                 StartCoroutine(UpdateText());
-                spoken = true;
+                _spoken = true;
             }
         }
 
@@ -149,12 +184,8 @@ namespace User.Wiebe.Scripts
             commands.Add(new CommandDisplay(oldCommand.Key.Display, thisWord, oldCommand.Key.Original), oldCommand.Value);
             _recordingInput = false;
             _timesRecorded = 0;
-        }
-
-        public void Record()
-        {
-            _recordingInput = true;
-            _updateText.text = "Recording...";
+            _spokenWords.Clear();
+            _spoken = false;
         }
 
         public void OnError(string recognizedError)
@@ -187,7 +218,7 @@ namespace User.Wiebe.Scripts
         {
             yield return new WaitForSeconds(1f);
             _updateText.text = "Recording...";
-            spoken = false;
+            _spoken = false;
             if (_timesRecorded >= 3)
                 _updateText.text = "Not recording...";
         }
