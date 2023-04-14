@@ -7,6 +7,8 @@ namespace Main._Scripts.FlappyDragon
     [RequireComponent(typeof(Rigidbody))]
     public class Dragon : MonoBehaviour
     {
+        [SerializeField] private Animator _animator;
+        
         [Header("Keybindings")]
         [SerializeField] private InputAction _flapAction;
         
@@ -21,8 +23,9 @@ namespace Main._Scripts.FlappyDragon
         [SerializeField] private float _downRotation = 30;
         
         private Rigidbody _rigidbody;
-        
-        
+        private static readonly int _Flap = Animator.StringToHash("Flap");
+
+
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -33,6 +36,8 @@ namespace Main._Scripts.FlappyDragon
         {
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.AddForce(Vector3.up * _flapForce, ForceMode.Impulse);
+            
+            _animator.SetTrigger(_Flap);
         }
 
         public void ResetPosition()
