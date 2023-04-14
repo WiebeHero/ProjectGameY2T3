@@ -3,14 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 using User.Wiebe.Scripts.States;
 using User.Wiebe.Scripts.States.StateManager;
-using AnimationState = UnityEngine.AnimationState;
 
-namespace User.Wiebe.Scripts
+namespace Main._Scripts.Main
 {
     public class DragonCommands : MonoBehaviour, SpeechRecognizerPlugin.ISpeechRecognizerPlugin
     {
@@ -34,7 +31,7 @@ namespace User.Wiebe.Scripts
             commands = new Dictionary<CommandDisplay, Type>
             {
                 { new CommandDisplay("Dance", "dance", "dance"), typeof(DanceState) },
-                { new CommandDisplay("Idle", "idle", "idle"), typeof(IdleState) },
+                { new CommandDisplay("Stop", "stop", "stop"), typeof(IdleState) },
                 { new CommandDisplay("Sit", "sit", "sit"), typeof(SitState) },
                 { new CommandDisplay("Lie down", "lie down", "lie down"), typeof(LieDownState) },
                 { new CommandDisplay("Roll", "roll", "roll"), typeof(RollOverState) },
@@ -63,8 +60,6 @@ namespace User.Wiebe.Scripts
             
             Debug.Log("Starting voice listener!");
             speechRecognizer = SpeechRecognizerPlugin.GetPlatformPluginVersion(gameObject.name);
-            
-            
             //The old listening configuration
             //speechRecognizer.SetContinuousListening(true);
             //speechRecognizer.StartListening();
@@ -100,6 +95,7 @@ namespace User.Wiebe.Scripts
         private void PossiblyExecuteCommand(string result)
         {
             Debug.Log("Voice result: " + result);
+            bool recognised = true;
             foreach (KeyValuePair<CommandDisplay, Type> pair in commands)
             {
                 result = result.ToLower();
@@ -107,7 +103,14 @@ namespace User.Wiebe.Scripts
                 {
                     Debug.Log("Voice command: " + pair.Key.Command);
                     AnimationStateManager.SetState(pair.Value);
+                    recognised = false;
                 }
+            }
+            Debug.Log("Recorded");
+            if (recognised)
+            {
+                _animator.Play("what the fuck___");
+                Debug.Log("Recording done here");
             }
         }
 
@@ -186,6 +189,7 @@ namespace User.Wiebe.Scripts
             _timesRecorded = 0;
             _spokenWords.Clear();
             _spoken = false;
+            _updateText.text = "Not Recording...";
         }
 
         public void OnError(string recognizedError)

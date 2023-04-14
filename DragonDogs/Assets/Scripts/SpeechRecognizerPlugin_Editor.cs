@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Main._Scripts.Main;
+using UnityEngine;
 using User.Wiebe.Scripts;
 
 public class SpeechRecognizerPlugin_Editor : SpeechRecognizerPlugin
