@@ -15,10 +15,14 @@ namespace Main._Scripts.FlappyDragon
 
         [SerializeField] private Transform _bottomLimit;
         [SerializeField] private Transform _topLimit;
+
+
+        [SerializeField] private float _upRotation = 30;
+        [SerializeField] private float _downRotation = 30;
         
         private Rigidbody _rigidbody;
-
-
+        
+        
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -77,6 +81,15 @@ namespace Main._Scripts.FlappyDragon
             else if (transform.position.y > _topLimit.position.y)
             {
                 FlappyStateManager.SetState(typeof(States.FinishState));
+            }
+            
+            if (_rigidbody.velocity.y > 0)
+            {
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, _upRotation), Time.deltaTime * 10);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, -_downRotation), Time.deltaTime * 10);
             }
         }
     }

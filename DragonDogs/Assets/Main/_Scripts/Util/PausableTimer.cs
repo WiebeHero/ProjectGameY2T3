@@ -42,4 +42,34 @@ namespace Main._Scripts.Util
 			}
 		}
 	}
+
+	public class PausableElseTimer
+	{
+		private float _timePassed;
+		private float _duration;
+		private Action _callback;
+
+		public void StartTimer(float pDurationInSeconds, Action pCallback)
+		{
+			_timePassed = 0;
+			_duration = pDurationInSeconds;
+			_callback = pCallback;
+		}
+
+		public void Stop()
+		{
+			_timePassed = 0;
+			_callback = null;
+		}
+		
+		public void Update()
+		{
+			_timePassed += Time.deltaTime;
+
+			if (_timePassed >= _duration)
+			{
+				if (_callback != null) _callback();
+			}
+		}
+	}
 }

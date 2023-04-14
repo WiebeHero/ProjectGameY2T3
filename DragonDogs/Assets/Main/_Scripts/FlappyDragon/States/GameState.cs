@@ -10,7 +10,9 @@ namespace Main._Scripts.FlappyDragon.States
 		[SerializeField] private ObstacleCourse _obstacleCourse;
 		[SerializeField] private TextMeshProUGUI _scoreText;
 		[SerializeField] private Button _testEndButton;
-
+		[SerializeField] private BackgroundScroller _backgroundScroller;
+		
+		
 		public override void StateReset() {}
 
 		public override void StateStart()
@@ -29,6 +31,8 @@ namespace Main._Scripts.FlappyDragon.States
 			
 			_dragon.EnableGravity(true);
 			_obstacleCourse.PauseCourse(false);
+			
+			_backgroundScroller.StartGenerating();
 		}
 
 		private void OnScoreChanged(int pScore)
@@ -59,6 +63,8 @@ namespace Main._Scripts.FlappyDragon.States
 			_testEndButton.onClick.RemoveListener(OnTestEndButtonClicked);
 			
 			FlappyDragon.instance.onScoreChanged -= OnScoreChanged;
+			
+			_backgroundScroller.StopGenerating();
 		}
 	}
 }

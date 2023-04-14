@@ -24,7 +24,6 @@ namespace Main._Scripts.FlappyDragon.States
 			_dragon.EnableGravity(false);
 			_dragon.LockInput(true);
 			_dragon.ResetPosition();
-			
 		}
 		
 		private void OnStartClick()
