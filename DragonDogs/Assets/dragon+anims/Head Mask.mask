@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Head Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: deform
+    m_Weight: 0
+  - m_Path: deform/spine
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L/toe.L
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L/toe.L/toe.L.001
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L/toe.L.002
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L/toe.L.002/toe.L.003
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L/toe.L.004
+    m_Weight: 0
+  - m_Path: deform/spine/leg.L/knee.L/shin.L/foot.L/toe.L.004/toe.L.005
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R/toe.R
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R/toe.R/toe.R.001
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R/toe.R.002
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R/toe.R.002/toe.R.003
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R/toe.R.004
+    m_Weight: 0
+  - m_Path: deform/spine/leg.R/knee.R/shin.R/foot.R/toe.R.004/toe.R.005
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L/finger.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L/finger.L/finger.L.003
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L/finger.L.001
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L/finger.L.001/finger.L.004
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L/finger.L.002
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/hand.L/finger.L.002/finger.L.005
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/upperarm.L/lowerarm.L/wrist.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L/wing.L.001
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L/wing.L.002
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L/wing.L.002/wing.L.003
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L/wing.L.002/wing.L.003/wing.L.004
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L/wing.L.002/wing.L.005
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.L/wingjoint.L/wing.L.002/wing.L.005/wing.L.006
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R/finger.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R/finger.R/finger.R.003
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R/finger.R.001
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R/finger.R.001/finger.R.004
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R/finger.R.002
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/hand.R/finger.R.002/finger.R.005
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/upperarm.R/lowerarm.R/wrist.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R/wing.R.001
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R/wing.R.002
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R/wing.R.002/wing.R.003
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R/wing.R.002/wing.R.003/wing.R.004
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R/wing.R.002/wing.R.005
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/clavicle.R/wingjoint.R/wing.R.002/wing.R.005/wing.R.006
+    m_Weight: 0
+  - m_Path: deform/spine/spine.001/spine.002/spine.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/cheek.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/cheek.L/cheek.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/cheek.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/cheek.R/cheek.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eye.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eye.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.L/eyebrow.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.L/eyebrow.L.001/eyebrow.L.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.L/eyebrow.L.001/eyebrow.L.002/eyebrow.L.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.R/eyebrow.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.R/eyebrow.R.001/eyebrow.R.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyebrow.R/eyebrow.R.001/eyebrow.R.002/eyebrow.R.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidB.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidB.L/eyelidB.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidB.L/eyelidB.L.001/eyelidB.L.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidB.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidB.R/eyelidB.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidB.R/eyelidB.R.001/eyelidB.R.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.L/eyelidT.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.L/eyelidT.L.001/eyelidT.L.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.L/eyelidT.L.001/eyelidT.L.002/eyelidT.L.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.L/eyelidT.L.001/eyelidT.L.002/eyelidT.L.003/eyelidT.L.004
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.R/eyelidT.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.R/eyelidT.R.001/eyelidT.R.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.R/eyelidT.R.001/eyelidT.R.002/eyelidT.R.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/eyelidT.R/eyelidT.R.001/eyelidT.R.002/eyelidT.R.003/eyelidT.R.004
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/jaw
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.L/lipB.L.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.L/lipB.L.003/lipB.L.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.L/lipB.L.003/lipB.L.002/lipB.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.R/lipB.R.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.R/lipB.R.003/lipB.R.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipB.R/lipB.R.003/lipB.R.002/lipB.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.L/lipT.L.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.L/lipT.L.003/lipT.L.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.L/lipT.L.003/lipT.L.002/lipT.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.R/lipT.R.003
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.R/lipT.R.003/lipT.R.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/lipT.R/lipT.R.003/lipT.R.002/lipT.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/nose.L
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/nose.L/nose.L.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/nose.R
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/nose.R/nose.R.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/tongue.002
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/tongue.002/tongue.001
+    m_Weight: 1
+  - m_Path: deform/spine/spine.001/spine.002/spine.003/spine.004/tongue.002/tongue.001/tongue
+    m_Weight: 1
+  - m_Path: deform/spine/tail
+    m_Weight: 0
+  - m_Path: deform/spine/tail/tail.003
+    m_Weight: 0
+  - m_Path: deform/spine/tail/tail.003/tail.002
+    m_Weight: 0
+  - m_Path: deform/spine/tail/tail.003/tail.002/tail.005
+    m_Weight: 0
+  - m_Path: deform/spine/tail/tail.003/tail.002/tail.005/tail.001
+    m_Weight: 0
+  - m_Path: deform/spine/tail/tail.003/tail.002/tail.005/tail.001/tail.004
+    m_Weight: 0
+  - m_Path: dragon
+    m_Weight: 0
+  - m_Path: Plane
+    m_Weight: 0
+  - m_Path: Plane.001
+    m_Weight: 0
+  - m_Path: tongue
+    m_Weight: 0

@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Dragon Test Scene/yeha.unity
     guid: a84778aa9d92df84999d8c90b77f35c4
+  - enabled: 1
+    path: Assets/Main/Scenes/DragonBlower.unity
+    guid: a09300d13a2d19a4ca1913f31ba2fe9b
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8772bc014e10c7e43b4cc6dbcb719b2e,
       type: 2}
