@@ -7,6 +7,7 @@ namespace Main._Scripts.FlappyDragon
 		private bool searching = true;
 
 		private Transform _top;
+		private Transform _bot;
 
 		private const int RANGE = 30;
 		
@@ -19,6 +20,7 @@ namespace Main._Scripts.FlappyDragon
 			}
 			
 			_top = transform.GetChild(0);
+			_bot = transform.GetChild(1);
 		}
 		
 		public void Move(float pSpeed)
@@ -33,11 +35,12 @@ namespace Main._Scripts.FlappyDragon
 			
 			
 			#if UNITY_EDITOR
-			Debug.DrawRay(_top.position, Vector3.down * RANGE, Color.red);
+			Debug.DrawRay(_bot.position, Vector3.up * RANGE, Color.red);
 			#endif
-
-			if (Physics.Raycast(_top.position, Vector3.down, out RaycastHit hit, RANGE));
+			
+			if (Physics.Raycast(_bot.position, Vector3.up, out RaycastHit hit, RANGE));
 			{
+				if (hit.transform == null) return;
 				if (!hit.transform.CompareTag("Player")) return;
 				FlappyDragon.instance.score++;
 				searching = false;

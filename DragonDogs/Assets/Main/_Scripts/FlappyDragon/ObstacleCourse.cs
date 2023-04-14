@@ -89,9 +89,9 @@ namespace Main._Scripts.FlappyDragon
 			obstacleObject.transform.position = Vector3.zero;
 
 			_topObstacle = Instantiate(selectedTop);
-			_topObstacle.AddComponent<BoxCollider>();
+			// _topObstacle.AddComponent<BoxCollider>();
 			_bottomObstacle = Instantiate(selectedBottom);
-			_bottomObstacle.AddComponent<BoxCollider>();
+			// _bottomObstacle.AddComponent<BoxCollider>();
 
 
 			
@@ -110,13 +110,17 @@ namespace Main._Scripts.FlappyDragon
 			
 			
 			_topObstacle.transform.position = new Vector3(topLimitPos.x, openingTopY + topObstacleHeight / 2, topLimitPos.z);
+			
+			
 			_bottomObstacle.transform.position = new Vector3(botLimitPos.x, openingBottomY - bottomObstacleHeight / 2, botLimitPos.z);
 			
 			_topObstacle.transform.parent = obstacleObject.transform;
 			_bottomObstacle.transform.parent = obstacleObject.transform;
+
 			
 			obstacle = obstacleObject.AddComponent<Obstacle>();
-			
+			_topObstacle.transform.Rotate(180,0,0);
+
 			_pausableTimer.StartTimer(_obstacleSpacingSeconds, GenerateFromModels);
 
 		}
