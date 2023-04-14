@@ -5,18 +5,18 @@ using User.Wiebe.Scripts;
 
 namespace Main._Scripts.Main
 {
-    public class RecordInputFromMic : Button
+    public class RecordInputFromMic : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     {
         [SerializeField] private DragonCommands dragonsCommands;
 
-        public override void OnPointerDown(PointerEventData pEvent)
+        public void OnPointerDown(PointerEventData pEvent)
         {
-            
+            dragonsCommands.StartRecordingCommand();
         }
         
-        public override void OnPointerUp(PointerEventData pEvent)
+        public void OnPointerUp(PointerEventData pEvent)
         {
-            
+            dragonsCommands.StopRecordingCommand();
         }
     }
 }
