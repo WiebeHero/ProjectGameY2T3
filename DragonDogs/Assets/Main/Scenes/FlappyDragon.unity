@@ -4401,12 +4401,12 @@ MonoBehaviour:
   - {fileID: 2740047040624287485, guid: b6ad06bd52c235e4aa697c532a5de262, type: 3}
   _topLimitObject: {fileID: 367770818}
   _bottomLimitObject: {fileID: 781696307}
-  _openingHeight: 5
+  _openingHeight: 5.7
   _obstacleMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   _obstacleGirth: 0.5
   _obstacleDepth: 0.5
-  _scrollingSpeed: 2
-  _obstacleSpacingSeconds: 4
+  _scrollingSpeed: 1.5
+  _obstacleSpacingSeconds: 6
 --- !u!1 &4624039492498157429
 GameObject:
   m_ObjectHideFlags: 0
