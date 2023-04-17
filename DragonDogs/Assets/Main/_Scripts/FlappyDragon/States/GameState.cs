@@ -27,8 +27,8 @@ namespace Main._Scripts.FlappyDragon.States
 			
 			FlappyDragon.instance.onScoreChanged += OnScoreChanged;
 			
-			_testEndButton.gameObject.SetActive(true);
-			_testEndButton.onClick.AddListener(OnTestEndButtonClicked);
+			//_testEndButton.gameObject.SetActive(true);
+			//_testEndButton.onClick.AddListener(OnTestEndButtonClicked);
 
 			
 			_dragon.EnableGravity(true);

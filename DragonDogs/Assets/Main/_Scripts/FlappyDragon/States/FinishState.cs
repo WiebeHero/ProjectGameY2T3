@@ -13,6 +13,8 @@ namespace Main._Scripts.FlappyDragon.States
 		[SerializeField] private Dragon _dragon;
 		[SerializeField] private AudioSource _gameOver;
 
+		private bool started;
+		
 		public override void StateReset() {}
 		
 		public override void StateStart()
@@ -43,6 +45,7 @@ namespace Main._Scripts.FlappyDragon.States
 
 		public override void Stop()
 		{
+			
 			_gameOver.Stop();
 			_finishWindow.SetActive(false);
 			_restartButton.onClick.RemoveListener(OnRestartButtonClicked);

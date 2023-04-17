@@ -27,6 +27,7 @@ namespace Main._Scripts.FlappyDragon
         private Rigidbody _rigidbody;
         private static readonly int _Flap = Animator.StringToHash("Flap");
 
+        private bool started, finished;
 
         private void Awake()
         {
@@ -47,6 +48,7 @@ namespace Main._Scripts.FlappyDragon
         {
             _rigidbody.velocity = Vector3.zero;
             transform.position = FlappyDragon.instance.startPosition;
+            started = false;
         }
         
         private void OnCollisionEnter(Collision pOther)
@@ -54,7 +56,11 @@ namespace Main._Scripts.FlappyDragon
             switch (pOther.transform.tag)
             {
                 case "Obstacle":
-                    FlappyStateManager.SetState(typeof(States.FinishState));
+                    if (!started)
+                    {
+                        FlappyStateManager.SetState(typeof(States.FinishState));
+                        started = true;
+                    }
                     break;
             }
         }
@@ -82,13 +88,10 @@ namespace Main._Scripts.FlappyDragon
 
         private void FixedUpdate()
         {
-            if (transform.position.y < _bottomLimit.position.y)
+            if ((transform.position.y < _bottomLimit.position.y || transform.position.y > _topLimit.position.y) && !started)
             {
                 FlappyStateManager.SetState(typeof(States.FinishState));
-            }
-            else if (transform.position.y > _topLimit.position.y)
-            {
-                FlappyStateManager.SetState(typeof(States.FinishState));
+                started = true;
             }
             
             if (_rigidbody.velocity.y > 0)
