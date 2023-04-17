@@ -116,7 +116,7 @@ namespace Main._Scripts.Main
 
         public void StartRecordingCommand()
         {
-            speechRecognizer.StartListening(false);
+            speechRecognizer.StartListening(true);
         }
 
         public void StopRecordingCommand()
@@ -174,7 +174,7 @@ namespace Main._Scripts.Main
                 break;
             }
             string dropDown = _dropdown.options[_dropdown.value].text;
-            KeyValuePair<CommandDisplay, Type>[] itemsToRemove = commands.Where(entry => entry.Key.Command.Equals(dropDown.ToLower())).ToArray();
+            KeyValuePair<CommandDisplay, Type>[] itemsToRemove = commands.Where(entry => entry.Key.Original.Equals(dropDown.ToLower())).ToArray();
             Debug.Log("Items to remove size: " + itemsToRemove.Length);
             KeyValuePair<CommandDisplay, Type> oldCommand = default;
             foreach (KeyValuePair<CommandDisplay, Type> item in itemsToRemove)
