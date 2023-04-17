@@ -8,7 +8,7 @@ namespace Main._Scripts.Main
     public class RecordInputFromMic : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     {
         [SerializeField] private DragonCommands dragonsCommands;
-        [SerializeField] private AudioSource _audio;
+        [SerializeField] private AudioSource _audio, _reverse;
 
         public void OnPointerDown(PointerEventData pEvent)
         {
@@ -18,6 +18,7 @@ namespace Main._Scripts.Main
         
         public void OnPointerUp(PointerEventData pEvent)
         {
+            _reverse.Play();
             dragonsCommands.StopRecordingCommand();
         }
     }
