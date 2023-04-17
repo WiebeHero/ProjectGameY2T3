@@ -11,11 +11,13 @@ namespace Main._Scripts.FlappyDragon.States
 		[SerializeField] private Button _exitButton;
 		[SerializeField] private TextMeshProUGUI _scoreText;
 		[SerializeField] private Dragon _dragon;
+		[SerializeField] private AudioSource _gameOver;
 
 		public override void StateReset() {}
 		
 		public override void StateStart()
 		{
+			_gameOver.Play();
 			_dragon.LockInput(true);
 			_dragon.DisableCollision(true);
 			_dragon.ResetVelocity();
@@ -41,6 +43,7 @@ namespace Main._Scripts.FlappyDragon.States
 
 		public override void Stop()
 		{
+			_gameOver.Stop();
 			_finishWindow.SetActive(false);
 			_restartButton.onClick.RemoveListener(OnRestartButtonClicked);
 			_exitButton.onClick.RemoveListener(OnExitButtonClicked);

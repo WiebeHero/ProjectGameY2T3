@@ -21,6 +21,8 @@ namespace Main._Scripts.FlappyDragon
 
         [SerializeField] private float _upRotation = 30;
         [SerializeField] private float _downRotation = 30;
+
+        [SerializeField] private AudioSource flap;
         
         private Rigidbody _rigidbody;
         private static readonly int _Flap = Animator.StringToHash("Flap");
@@ -36,6 +38,7 @@ namespace Main._Scripts.FlappyDragon
         {
             _rigidbody.velocity = Vector3.zero;
             _rigidbody.AddForce(Vector3.up * _flapForce, ForceMode.Impulse);
+            flap.Play();
             
             _animator.SetTrigger(_Flap);
         }
